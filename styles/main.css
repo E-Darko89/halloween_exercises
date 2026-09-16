@@ -8,7 +8,10 @@ header img {
 }
 header h2 {
         font-size:230%;
+        font-style: italic;
         text-indent:  25px;
+        color: orange;
+        text-shadow: 2px 2px 2px black;
 }
 header h3{
         font-size:125%;

@@ -1,3 +1,14 @@
 body {
     font-family: sans-serif;
 }
+
+/* Header */
+header h2 {
+        font-size:230%
+}
+header h3{
+        font-size:125%
+}
+
+/*Main */
+main h1font-size:140%

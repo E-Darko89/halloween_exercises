@@ -11,4 +11,10 @@ header h3{
 }
 
 /*Main */
-main h1font-size:140%
+main h1 {
+    font-size: 140%
+}
+
+main h2 {
+    font-size: 125%
+}

@@ -3,6 +3,9 @@ body {
 }
 
 /* Header */
+header img {
+    float: left;
+}
 header h2 {
         font-size:230%;
 }

@@ -32,7 +32,7 @@ header h3{
 main h1 {
         font-size: 140%;
 }
-main h2:first-letter{
+main h1:first-letter{
     font-size:240%;
 }
 

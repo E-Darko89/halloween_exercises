@@ -8,6 +8,9 @@ a {
 a:link, a:visited {
     color: orange;
 }
+a:hover, a:focus {
+    color: green;
+}
 
 /* Header */ 
 header img {

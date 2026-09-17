@@ -1,7 +1,13 @@
 body {
      font-family: sans-serif;
 }
-
+a {
+    color: orange;
+    font-weight: bold;
+}
+a:link, a:visited {
+    color: orange;
+}
 
 /* Header */ 
 header img {

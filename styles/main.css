@@ -1,3 +1,6 @@
+html {
+    background-image: url ("../images/bats.gif");
+}
 body {
      font-family: sans-serif;
      width:  800px;

@@ -54,6 +54,10 @@ ul {
 }
 
 /* Footer */
+footer{
+    border-top: 2px solid black;
+}
+
 footer p {
     font-size: 90%;
     text-align: center;

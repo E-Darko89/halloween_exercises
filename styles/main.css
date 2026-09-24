@@ -2,6 +2,8 @@ body {
      font-family: sans-serif;
      width:  800px;
      background-color: white;
+     border: 3px solid black;
+     box-shadow: 0 9px 18px 9px;
 }
 a {
     color: orange;

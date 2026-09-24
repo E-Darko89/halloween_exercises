@@ -58,9 +58,14 @@ main h1:first-letter{
 
 main h2 {
         font-size: 125%;
+        margin: .8em 0 .5em 0;
 }
 main h3{
         font-size: 110%;
+        margin-bottom: .5em;
+}
+main p{
+    margin-bottom: .5em;
 }
 ul {
     line-height: 1.5;

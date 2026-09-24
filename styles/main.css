@@ -67,8 +67,8 @@ main h3{
 main p{
     margin-bottom: .5em;
 }
-ul {
-    line-height: 1.5;
+main ul {
+    margin-top: 0;   
 }
 
 /* Footer */

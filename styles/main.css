@@ -44,7 +44,12 @@ header h3{
         
 }
 
-/*Main */
+/*section */
+
+section{
+
+}
+
 main{
     padding: 20px 25px 25px 25px;
 }
@@ -80,6 +85,7 @@ aside ul{
 
 /* Footer */
 footer{
+    clear: both;
     border-top: 2px solid black;
     padding: 15px;
     background-image: linear-gradient(45deg, black 0%, orange 35%, white 100% );

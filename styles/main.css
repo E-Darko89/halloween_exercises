@@ -75,8 +75,9 @@ aside {
     width: 160px;
 }
 aside ul{
-    
+    line-height: 1.5;
 }
+
 /* Footer */
 footer{
     border-top: 2px solid black;

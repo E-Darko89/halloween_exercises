@@ -47,13 +47,12 @@ header h3{
 /*section */
 
 section{
-
+      width: 580px;
+      float: right;
+      padding: 20px 40px 20px;
 }
 
-main{
-    padding: 20px 25px 25px 25px;
-}
-main h1 {
+section h1 {
         font-size: 140%;
         margin-bottom: .5em;
     }

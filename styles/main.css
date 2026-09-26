@@ -67,10 +67,16 @@ main h3{
 main p{
     margin-bottom: .5em;
 }
-main ul {
-    margin-top: 0;   
-}
+  
 
+/* sidebar */
+aside {
+    float: left;
+    width: 160px;
+}
+aside ul{
+    
+}
 /* Footer */
 footer{
     border-top: 2px solid black;

@@ -41,8 +41,18 @@ header h2 {
 }
 header h3{
         font-size:125%;
-        
 }
+
+/* Navigation menu */
+#nav_menu {
+    clear: left;
+}
+#nav_menu ul {
+list-style: none;
+position: relative;
+}
+
+
 
 /*section */
 

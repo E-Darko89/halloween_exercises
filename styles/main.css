@@ -74,6 +74,21 @@ float: none;
     padding: 0;
 }
 
+#nav_menu ul li a{
+    text-align: center;
+    display: block;
+    width: 160px;
+    padding: .7em 0;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+#nav_menu ul li a.current{
+    color: orange;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus{
+
+}
 /*section */
 section{
       width: 500px;

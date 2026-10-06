@@ -126,8 +126,18 @@ aside {
     width: 160px;
     padding: 20px 0;
 }
-aside ul{
-    line-height: 1.5;
+#nav_list ul{
+    list-style: none;
+    padding-left: 1.5em;
+    border: 2px solid black;
+}
+#nav_list ul li a{
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: orange;
+    color: black;
+    padding:  .5em 0 .5em .5em;
 }
 
 /* Footer */

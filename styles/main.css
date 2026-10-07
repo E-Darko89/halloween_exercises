@@ -118,7 +118,18 @@ section h3{
 section p{
     margin-bottom: .5em;
 }
-  
+ section a {
+    font-weight: bold;
+    color: orange;
+ }
+section a:link, main a:visited{
+    color:orange
+}
+    section a:hover, main a:focus{
+        color: green 
+    }
+}
+
 
 /* sidebar */
 aside {

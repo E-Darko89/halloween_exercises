@@ -128,8 +128,7 @@ section a:link, main a:visited{
     section a:hover, main a:focus{
         color: green 
     }
-}
-
+    
 
 /* sidebar */
 aside {

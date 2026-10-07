@@ -48,6 +48,8 @@ header h3{
 }
 #nav_menu ul ul{
      display: none;
+     position: absolute ;
+     top: 100%;
 }
 #nav_menu ul ul li{
 float: none;

@@ -133,8 +133,15 @@ aside {
 #nav_list ul{
     list-style: none;
     padding-left: 1.5em;
+   
+}
+
+#nav_list ul li{
+    width: 110px;
+    margin-bottom: .5em;
     border: 2px solid black;
 }
+
 #nav_list ul li a{
     display: block;
     font-weight: bold;

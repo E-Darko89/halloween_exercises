@@ -1,6 +1,8 @@
 html {
-    background-image: url("../images/bats.gif");
+    background-color: white;
 }
+
+
 body {
      font-family: sans-serif;
      width: 800px;
@@ -8,7 +10,7 @@ body {
      margin: 0 auto;
      padding: 0;
      border: 3px solid black;
-     box-shadow: 0 9px 18px 9px;
+     
 }
 h1, h2, h3, p {
     margin: 0;
@@ -171,6 +173,13 @@ footer p {
     
  /* Media query for large screens */
  @media only screen and (min-width: 1000px) {
+   html{
+    background-image: url("../images/bats.gif");
+   }
 
-    }
+   body {
+      box-shadow: 0 9px 18px 9px;
+   }
+    
+}
 

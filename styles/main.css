@@ -163,12 +163,14 @@ footer p {
     font-size: 90%;
     text-align: center;
 
+} 
   
   
-  
-    /* Media query for large screens */
-    @media only screen and (min-width: 1000px) {
+    
+    
+    
+ /* Media query for large screens */
+ @media only screen and (min-width: 1000px) {
 
     }
 
-}

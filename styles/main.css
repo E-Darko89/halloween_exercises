@@ -5,13 +5,16 @@ html {
 
 body {
      font-family: sans-serif;
-     width: 800px;
+     width: 100%;
+     max-width: 800px;
      background-color: white;
      margin: 0 auto;
      padding: 0;
      border: 3px solid black;
-     
+     box-shadow: none;
 }
+
+
 h1, h2, h3, p {
     margin: 0;
     padding: 0;
@@ -167,21 +170,27 @@ footer p {
 
 } 
   
-  /* Media query for medium screens */
+  /* medium screens */
   @media only screen and (min-width: 800px) {
-
+     body {
+        width: 95%;
+     }
   } 
     
   
-       
     
- /* Media query for large screens */
+  
+
+
+    
+ /* large screens */
  @media only screen and (min-width: 1000px) {
    html{
     background-image: url ("../images/bats.gif");
    }
 
    body {
+      width: 800px;
       box-shadow: 0 9px 18px 9px;
    }
     

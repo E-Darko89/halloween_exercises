@@ -75,6 +75,15 @@ float: none;
     background-color: black;
     color: white;
 }
+
+/*Down triangle for submenu items */
+#nav_menu ul li:has(ul) > a::after {
+    content: "\25BC";
+    font-size: 0.7em;
+    padding-left: 5px;
+}
+
+
 #nav_menu ul li a.current{
     color: orange;
 }

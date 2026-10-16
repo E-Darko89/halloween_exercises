@@ -37,6 +37,10 @@ header h3{
 #nav_menu {
     clear: left;
 }
+
+#menu_button:checked ~ #nav_menu {
+    display: block;
+}
 #nav_menu ul {
     list-style: none;
     position: relative;

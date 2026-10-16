@@ -43,11 +43,13 @@ header h3{
 }
 #nav_menu ul li{
     float: left;
+    position: relative;
 }
 #nav_menu ul ul{
      display: none;
      position: absolute ;
      top: 100%;
+     left: 0;
 }
 #nav_menu ul ul li{
 float: none;

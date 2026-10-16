@@ -85,11 +85,7 @@ float: none;
 
 
 /*section */
-section{
-      width: 500px;
-      float: right;
-      padding: 20px 40px 20px;
-}
+
 
 section h1 {
         font-size: 140%;
@@ -123,11 +119,7 @@ section a:link, main a:visited{
 
 
 /* sidebar */
-aside {
-    float: left;
-    width: 160px;
-    padding: 20px 0;
-}
+
 #nav_list ul{
     list-style: none;
     padding-left: 1.5em;

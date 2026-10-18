@@ -40,9 +40,8 @@ header h3{
 /* Navigation menu */
 #nav_menu {
     clear: left;
-    position: absolute;
-    display: none;
-}
+    position: relative;
+    }
 
 /* show the menu checkbox on small screens */
 #menu_button {

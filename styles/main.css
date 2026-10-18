@@ -37,6 +37,9 @@ header h3{
 #nav_menu {
     clear: left;
 }
+#menu_button {
+    display: none;
+}
 
 #menu_button:checked ~ #nav_menu {
     display: block;

@@ -6,6 +6,7 @@ html {
 body {
      font-family: sans-serif;
      background-color: white;
+     margin: 0 auto;
      padding: 0;
      border: 3px solid black;
      box-shadow: none;
@@ -21,6 +22,7 @@ h1, h2, h3, p {
 /* Header */ 
  header {
     text-align: center;
+    padding: 15px;
  }
 
 
@@ -187,7 +189,7 @@ footer p {
   /* medium screens */
   @media only screen and (min-width: 800px) {
      body {
-        width: 95%;
+        width: 800px;
         margin: 0 auto;
      }
      
@@ -206,11 +208,20 @@ footer p {
          text-align: left;
         }
 
-        
+        header img {
+            padding-right: 15px;
+        }
+
+        /*Two-column layout */
+        main {
+            display: flex;
+            flex-direction: row;
+        }
+
         section {
             width: 500px;
             float: right;
-            padding: 20px 40px 20px;
+            padding: 20px 40px;
         }
 
         aside {

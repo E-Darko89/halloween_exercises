@@ -27,7 +27,7 @@ h1, h2, h3, p {
 
 header img {
     float: left;
-    
+    padding right: 15px;
 }
 header h2 {
            font-size:230%;

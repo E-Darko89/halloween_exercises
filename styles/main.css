@@ -37,8 +37,10 @@ header h3{
 #nav_menu {
     clear: left;
 }
+
+/* show the menu checkbox on small screens */
 #menu_button {
-    display: none;
+    display: block;
 }
 
 #menu_button:checked ~ #nav_menu {

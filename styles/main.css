@@ -110,6 +110,10 @@ float: none;
 
 /*section */
 
+main{
+    display: flex;
+    flex-direction: column;
+}
 
 section h1 {
         font-size: 140%;

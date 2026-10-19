@@ -226,6 +226,20 @@ aside {
             margin: 0 auto;
             box-shadow: 0 9px 18px 9px;
         }
+
+        header {
+            background-image: linear-gradient(45deg, white 0%, orange 100%);
+            text-align: center;
+            padding 15px;
+        }
+        header img {
+            float: left;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+        
     }
 
 

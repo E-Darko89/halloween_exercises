@@ -96,18 +96,13 @@ nav_menu ul li a:hover, #nav_menu ul li a:focus{
 #nav_menu ul li:focus-within > ul{
     display: block;
 }
-#nav_menu > ul::after{
-    content: "";
-    clear: both;
-    display: block;
-}
-
-#nav_menu ul{
-    margin: 0;
-    padding: 0;
-}
-
-
+/* main content */
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 12px;
+    
 
 
 

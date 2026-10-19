@@ -1,264 +1,191 @@
 
-/* Small screens - default navigation */
-#nav_menu {
-    position: relative;
+/* Small screens - default styles */
+html {
+    background-color: white;
 }
 
-#menu-toggle {
-    display: none;
+body {
+    font-family: sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border: 3px solid black;
 }
 
-/* Menu button */
-.menu-button {
-    display: block;
-    background-color: black;
-    color: white;
-    padding: .7em;
-    cursor: pointer;
-}
-
-/* Hide the menu until the button is clicked */
-#nav_menu > ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    background-color: black;
-}
-
-/* Show the menu when checked */
-#menu-toggle:checked ~ ul {
-    display: block;
-}
-
-#nav_menu ul {
-    list-style: none;
+/* Reset margins and padding */
+h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
 
-#nav_menu ul li {
-    position: relative;
+/* Header */
+header {
+    background-image: linear-gradient(45deg, white 0%, orange 100%);
+    padding: 15px;
+    text-align: center;
+}
+
+header img {
     float: none;
+    padding-right: 0;
 }
 
-#nav_menu ul li a {
-    display: block;
-    text-align: left;
+header h2 {
+    font-size: 230%;
+}
+
+header h3 {
+    font-size: 125%;
+    padding-bottom: 15px;
+}
+
+/* Navigation menu */
+#nav_menu {
+    clear: left;
+}
+
+/* Main content layout */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section */
+section {
     width: auto;
-    padding: .7em;
-    background-color: black;
-    color: white;
-    text-decoration: none;
+    float: none;
+    padding: 20px;
+    order: 1;
 }
 
-#nav_menu ul li a:hover,
-#nav_menu ul li a:focus {
-    background-color: gray;
+section h1 {
+    font-size: 140%;
+    margin-bottom: .5em;
 }
 
-/* Submenu: right triangle */
-#nav_menu ul ul {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    z-index: 20;
-    width: 160px;
+section h1:first-letter {
+    font-size: 240%;
 }
 
-#nav_menu ul li:hover > ul {
+section h2 {
+    font-size: 125%;
+    margin: .8em 0 .5em 0;
+}
+
+section h3 {
+    font-size: 110%;
+    margin: .8em 0 .5em 0;
+}
+
+section p {
+    margin-bottom: .5em;
+}
+
+section a {
+    font-weight: bold;
+    color: orange;
+}
+
+section a:link,
+section a:visited {
+    color: orange;
+}
+
+section a:hover,
+section a:focus {
+    color: green;
+}
+
+/* Sidebar */
+aside {
+    float: none;
+    width: auto;
+    padding: 20px;
+    order: 2;
+}
+
+#nav_list ul {
+    list-style: none;
+    padding-left: 1.5em;
+}
+
+#nav_list ul li {
+    width: 110px;
+    margin-bottom: .5em;
+    border: 2px solid black;
+}
+
+#nav_list ul li a {
     display: block;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: orange;
+    color: black;
+    padding: .5em 0 .5em .5em;
 }
 
-/* Right-pointing submenu symbol */
-#nav_menu li:has(ul) > a::after {
-    content: "\25B6";
-    float: right;
+/* Footer */
+footer {
+    clear: both;
+    border-top: 2px solid black;
+    padding: 15px;
+    background-image: linear-gradient(45deg, black 0%, orange 50%, white 100%);
+}
+
+footer p {
+    font-size: 90%;
+    text-align: center;
 }
 
 /* Medium screens: 800px and wider */
 @media only screen and (min-width: 800px) {
 
-    /* Show the navigation menu */
-    .menu-button {
-        display: none;
+    body {
+        width: 800px;
+        margin: 0 auto;
     }
 
-    #nav_menu > ul {
-        display: block !important;
-        position: relative;
-        width: auto;
+    /* Header */
+    header {
+        background-image: linear-gradient(
+            45deg, white 0%, orange 75%, black 100%
+        );
+        text-align: left;
     }
 
-    #nav_menu ul li {
+    header img {
         float: left;
+        padding-right: 15px;
     }
 
-    #nav_menu ul li a {
-        text-align: center;
-        width: 160px;
+    /* Two-column layout */
+    main {
+        flex-direction: row;
     }
 
-    /* Submenu appears below the menu item */
-    #nav_menu ul ul {
-        top: 100%;
-        left: 0;
-        width: 160px;
-    }
-
-    #nav_menu ul ul li {
+    section {
+        width: 500px;
         float: none;
+        padding: 20px 40px;
+        order: 0;
     }
 
-    /* Down-pointing submenu symbol */
-    #nav_menu li:has(ul) > a::after {
-        content: "\25BC";
-        float: right;
-    }
-
-    /* Keep the menu horizontal when checked */
-    #menu-toggle:checked ~ ul {
-        display: block;
-    }
-
-    #nav_menu > ul::after {
-        content: "";
-        clear: both;
-        display: block;
-    }
-}
-
-/* Small screens - default navigation */
-#nav_menu {
-    position: relative;
-}
-
-#menu-toggle {
-    display: none;
-}
-
-/* Menu button */
-.menu-button {
-    display: block;
-    background-color: black;
-    color: white;
-    padding: .7em;
-    cursor: pointer;
-}
-
-/* Hide the menu until the button is clicked */
-#nav_menu > ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    background-color: black;
-}
-
-/* Show the menu when checked */
-#menu-toggle:checked ~ ul {
-    display: block;
-}
-
-#nav_menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#nav_menu ul li {
-    position: relative;
-    float: none;
-}
-
-#nav_menu ul li a {
-    display: block;
-    text-align: left;
-    width: auto;
-    padding: .7em;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-}
-
-#nav_menu ul li a:hover,
-#nav_menu ul li a:focus {
-    background-color: gray;
-}
-
-/* Submenu: right triangle */
-#nav_menu ul ul {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    z-index: 20;
-    width: 160px;
-}
-
-#nav_menu ul li:hover > ul {
-    display: block;
-}
-
-/* Right-pointing submenu symbol */
-#nav_menu li:has(ul) > a::after {
-    content: "\25B6";
-    float: right;
-}
-
-/* Medium screens: 800px and wider */
-@media only screen and (min-width: 800px) {
-
-    /* Show the navigation menu */
-    .menu-button {
-        display: none;
-    }
-
-    #nav_menu > ul {
-        display: block !important;
-        position: relative;
-        width: auto;
-    }
-
-    #nav_menu ul li {
-        float: left;
-    }
-
-    #nav_menu ul li a {
-        text-align: center;
+    aside {
         width: 160px;
-    }
-
-    /* Submenu appears below the menu item */
-    #nav_menu ul ul {
-        top: 100%;
-        left: 0;
-        width: 160px;
-    }
-
-    #nav_menu ul ul li {
         float: none;
+        padding: 20px 0;
+        order: 0;
+    }
+}
+
+/* Large screens: 1000px and wider */
+@media only screen and (min-width: 1000px) {
+
+    html {
+        background-image: url("../images/bats.gif");
     }
 
-    /* Down-pointing submenu symbol */
-    #nav_menu li:has(ul) > a::after {
-        content: "\25BC";
-        float: right;
-    }
-
-    /* Keep the menu horizontal when checked */
-    #menu-toggle:checked ~ ul {
-        display: block;
-    }
-
-    #nav_menu > ul::after {
-        content: "";
-        clear: both;
-        display: block;
+    body {
+        box-shadow: 0 9px 18px 9px;
     }
 }

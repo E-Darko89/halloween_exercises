@@ -200,8 +200,9 @@ aside p {
 footer {
     clear: both;
     border-top: 2px solid black;
-    padding: 15px;
-    background-image: linear-gradient(45deg, black 0%, orange 35%, white 100% );
+    padding: 10px;
+    background-image: none;
+    background-color: white;
 }
 
 footer p {
@@ -209,45 +210,25 @@ footer p {
     text-align: center;
 
 }  
- /* Medium screen: 800px and wider */
+ /* Medium screens*/
  @media only screen and (min-width: 1000px) {
-
-    }
-body{
+     body{
     width: 800px;
     margin: 0 auto;
 }
 /* header */
 header {
-    background-image: linear-gradient(45deg, white, orange 75%, black 100%);
     text-align: left;
 }
-    header img {
-        float:left;
-        padding-right: 15px;
-    }
-     
-/* two-column layout */
 main {
     flex-direction: row;
-}
-section {
-    width: 500px;
-    float: none;
-    padding: 20px 40px;
-    order: 0;
-}
-aside {
-    width: 160px;
-    float: none;
-    padding:20px 0;
-    order:0;
 }
 
 /*large screens: 1000px and wider */
 @media only screen and (min-width: 1000px) {
     html {
         background-image: url("../images/bats.gif");
+        background-repeat: repeat;
     }
     body{
         box-shadow: 0 9px 18px 9px

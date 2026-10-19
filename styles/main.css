@@ -1,5 +1,5 @@
 html {
-    background-image: url("../images/bats.gif");
+    background-image: white;
 }
 body {
      font-family: sans-serif;
@@ -188,7 +188,7 @@ footer p {
 #menu_checkbox:checked ~ #nav_menu ul {
     display: flex;
     flex-direction: row;
-    
+
 }
 }
     body {

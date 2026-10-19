@@ -158,6 +158,39 @@ footer p {
 } 
 /* medium screens */
 @media screen and (min-width: 800px) {
+    /*make the navigation menu visible */
+    #nav_menu {
+        display: block;
+}
+
+/* hide the menu button */
+    #menu_button {
+        display: none;
+}
+
+/* make the submenu symbol a down triangle */
+#nav_menu ul li > a:after {
+    content: "";
+}
+
+#nav_menu ul li"has(ul) >a::after {
+    content: " \25BC";
+    font-size: 0.7em;
+    padding-left: 5px;
+
+    /* position the submenu below the menu item */
+    #nav_menu ul ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+}
+/* dsplay the menu horizontally when the checkbox is checked */
+#menu_checkbox:checked ~ #nav_menu ul {
+    display: flex;
+    flex-direction: row;
+    
+}
+}
     body {
         width : 800px;
         margin: 0 auto;

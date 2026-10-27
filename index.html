@@ -4,72 +4,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Halloween</title>
-    <link rel="icon" href="images/favicon.ico" />
-    <link rel="stylesheet" href="styles/main.css" />
+    <title>the Halloween Store - props</title>
+    <link rel="icon" href="../../images/favicon.ico" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <link rel="stylesheet" href="../../styles/menu.css" />
+    <link rel="stylesheet" href="../../styles/pages.css" />
   </head>
   <body>
     <header>
-      <img src="images/pumpkin.gif" alt="Halloween pumpkin" />
+      <a href="../../index.html">
+        <img src="../../images/pumpkin.gif" alt="Halloween pumpkin" />
+      </a>
       <h2>The Halloween Store</h2>
       <h3>For the little Goblin in all of us!</h3>
     </header>
 
-    <input type="checkbox" id="menu_button" />
-    <label for="menu_button"></label>
-
     <nav id="nav_menu">
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-button">menu</label>
       <ul>
-        <li><a href="index.html" class="current">Home</a></li>
-        <li><a href="products/index.html">Product list</a></li>
-        <li><a href="personal/index.html">Personal</a></li>
+        <li><a href="../../index.html">Home</a></li>
         <li>
-          <a href="decorations/index.html">Decorating ideas</a>
+          <a href="../index.html" class="current">products</a>
           <ul>
-            <li><a href="decorations/outdoor.html">outdoor</a></li>
-            <li><a href="decorations/indoor.html">indoor</a></li>
-            <li><a href="decorations/table.html">table</a></li>
-            <li><a href="decorations/treats.html">treats</a></li>
+            <li><a href="index.html">props</a></li>
+            <li><a href="../costumes/index.html">costumes</a></li>
+            <li><a href="../special/index.html">special FX</a></li>
+            <li><a href="../masks/index.html">masks</a></li>
           </ul>
         </li>
-        <li><a href="email.html">join email</a></li>
+        <li><a href="../personal/index.html">Personal</a></li>
+        <li><a href="../../decorations/index.html">Decorating ideas</a></li>
+        <li><a href="../../email.html">join email</a></li>
       </ul>
     </nav>
 
     <main>
       <aside>
-        <nav id="nav_list">
-          <ul>
-            <li><a href="products/props/index.html">props</a></li>
-            <li><a href="products/costumes/index.html">costumes</a></li>
-            <li><a href="products/special/index.html">special FX</a></li>
-            <li><a href="products/masks/index.html">masks</a></li>
-          </ul>
-        </nav>
+        <div class="guarantee-box">
+          <h3>My guarantee</h3>
+          <p>If you aren't completely satisfied with everything you buy from my site, you can return it for a full refund. <strong>no questions asked!</strong></p>
+        </div>
       </aside>
+
       <section>
-        <h1>
-          Welcome to my site. <br />
-          Please come in and stay awhile.
-        </h1>
+        <h1>props</h1>
 
-        <p>I started this website because Halloween has always been my favorite holiday. But during the last year, I started selling some of my favorite Halloween products, and they've become quite a hit.</p>
-
-        <p>If you click on the Personal link, you can browse my favorite Halloween pictures, stories, and films. And if you join my email list, I will keep you up-to-date on all things Halloween.</p>
-        <h3>Product of the week</h3>
-        <p>
-          <a href="products/cat.html"><img src="images/cat1.png" alt="Deranged cat" width="150" /></a>
-        </p>
-
-        <p><a href="products/cat.html">20" Deranged cat"</a></p>
-
-        <h3>My guarantee</h3>
-
-        <p>If you aren't completely satisfied with everything you buy from my site, you can return it for a full refund. <strong>no questions asked!</strong></p>
+        <ul id="product_catalog">
+          <li>
+            <ul>
+              <li>
+                <a href="flying_bats.html" accesskey="b">flying <u>B</u>ats</a>
+              </li>
+              <li>Bats flying in front of a full moon make for eerie spectacle</li>
+              <li><strong>price:</strong> 69.99</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <a href="deranged_cat.html" accesskey="c">20" Deranged <u>c</u>at</a>
+              </li>
+              <li>this guy is sure to shorten the stay of any unwanted house guest</li>
+              <li><strong>price:</strong> 14.99</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li><a href="uglier_rat.html" accesskey="g">20" U<u>g</u>lier Rat</a></li>
+              <li>Yuck! This one will keep you awake at night.</li>
+              <li><strong>price:</strong> 19.99</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <a href="plastic_skeleton.html" accesskey="s">20" Plastic <u>S</u>keleton</a>
+              </li>
+              <li>This life-size plastic skeleton will be the life of the party. Use him as is or dress him up for an even better effect.</li>
+              <li><strong>price:</strong> 14.95</li>
+            </ul>
+          </li>
+        </ul>
       </section>
     </main>
+
     <footer>
       <p>(c) Ben Murach</p>
     </footer>

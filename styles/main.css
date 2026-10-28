@@ -1,5 +1,5 @@
 html {
-    background-image: white;
+    background-color: white;
 }
 body {
      font-family: sans-serif;
@@ -36,6 +36,8 @@ header h3{
 #nav_menu ul {
     list-style: none;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 #nav_menu ul li{
     float: left;
@@ -156,76 +158,84 @@ footer p {
     text-align: center;
 
 } 
-/* medium screens */
-@media screen and (min-width: 800px) {
-    /*make the navigation menu visible */
+#product_catalog,
+#product_catalog ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#product_catalog > li{
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ccc;
+}
+#product_catalog ul li a {
+    text-decoration: none;
+    font-size: 1.15em;
+    font-weight: bold;
+}
+#product_catalog u {
+    text-decoration: underline;
+}
+   
+/* meduim screens */
+@media screen and (max-width: 800px) {
     #nav_menu {
         display: block;
-}
-
-/* hide the menu button */
+    }
     #menu_button {
         display: none;
-}
+    }
+    #nav_menu ul li > a:after {
+        content:"";
+    }
 
-/* make the submenu symbol a down triangle */
-#nav_menu ul li > a:after {
-    content: "";
-}
-
-#nav_menu ul li"has(ul) >a::after {
-    content: " \25BC";
-    font-size: 0.7em;
-    padding-left: 5px;
-
-    /* position the submenu below the menu item */
+    #nav_menu ul li:has(ul) > a::after {
+        content: "\25BC";
+        font-size: 0.7em;
+        padding-left: 5px;
+    }
     #nav_menu ul ul {
-        position: absolute;
+        position:absolute;
         top: 100%;
         left: 0;
-}
-/* dsplay the menu horizontally when the checkbox is checked */
-#menu_checkbox:checked ~ #nav_menu ul {
-    display: flex;
-    flex-direction: row;
+    }
+    #menu_checkbox:checked ~ #nav_menu ul {
+        display: flex;
+        flex-direction: row;
+    }
+    body{
+        width: 800px;
+        margin 0 auto;
+    }
+    header {
+        background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+        text-align: left;
+    }
+    header img {
+        padding-right: 15px;
+    }
 
-}
-}
-    body {
-        width : 800px;
-        margin: 0 auto;
-}
-header {
-    background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
-    text-align: left;
-}
-header img {
-    padding-right: 15px;
-}
-
-/* two column layout */
-section {
-    width: 500px;
-    float: right;
-    padding: 20px 40px 20px;
-}
-
-aside {
-    float: left;
-    width: 160px;
-    padding: 20px 0;
+    section {
+        width: 500px;
+        float: right;
+        padding: 20px 40px 20px;
+    }
+    aside {
+        float: left;
+        width: 160px;
+        padding: 20px 0;
+    }
 }
 
- /* large screens */
- @media screen and (min-width: 1000px) {
-    html{
+/* large screens */
+@media screen and (min-width: 1000px) {
+    html {
         background-image: url("../images/bats.gif");
     }
-        body{
-            width : 1000px;
-            margin: 0 auto;
-            box-shadow: 0 9px 18px 9px;
-        }
-
-       
-
+    body {
+        width: 1000px;
+        margin: 0 auto;
+        box-shadow: 0 9px 18px 9px rgba(0,0,0,0.3);
+    }
+}

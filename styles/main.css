@@ -105,8 +105,9 @@ header h3{
 /* Two-column container structure */
 main {
     display: block;
-    clear:both;
+    overflow: hidden;
     padding: 20px 0;
+    clear:both;
 }
 
 /* sidebar guarantee container */
@@ -189,10 +190,13 @@ footer {
     border-top: 2px solid black;
     padding: 15px;
     background-color: white;
+    margin-top: 20px;
 }
 footer p {
     font-size: 90%;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 /* large screens */
 @media screen and (min-width: 1000px) {

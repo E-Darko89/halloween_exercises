@@ -188,38 +188,31 @@
         color: #000;
       }
       /* footer styling */
+      footer {
+        clear: both;
+        border-top: 2px solid black;
+        padding: 15px;
+        background-color: white;
+      }
+      footer p {
+        font-size: 90%;
+        text-align: center;
+      }
 
-
-
-
-
-
-
-
-
-
-        /* hide sub-menu dropdown by default */
-        #nav_menu ul ul {
-          display: none;
-          position: absolute;
-          top: 40px;
-          z-index: 1000;
-        }
-
-
-        }
-        /* reveal menu on hover */
-
-        }
-        #nav_menu ul li a:hover,
-        #nav_menu ul li a.current {
-          color: #ff9900;
-        }
+      /* large screen meedia adjustments */
+      @media  screen and (min-width: 1000px) {
+        body {
+          width: 1000px;
+          box-shadow: 0 9px 18px 9px rgba(0,0,0,0.2);
+      }
+      section {
+        width: 780px;
+      }
     </style>
   </head>
   <body>
     <header>
-      <a href="../../index.html"><img src="../images/pumpkin.gif" alt="Halloween Store Logo  " /> </a>
+      <img src="images/pumpkin.gif" alt="Halloween Store Logo  " />
       <h2>The Halloween Store</h2>
       <h3>For the little Goblin in all of us!</h3>
     </header>

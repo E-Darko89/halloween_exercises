@@ -102,13 +102,13 @@ header h3{
     font-size: 0.7em;
     padding-left: 5px;
 }
-#nav_menu ul li a[href*="personal"]::after
-#nav_menu ul li a[href*="decorations"]::after {
+#nav_menu  > ul > li:nth-child(3) > a::after
+#nav_menu > ul > li:nth-child(4) > a::after {
     content: "";
     display: inline-block;
     width: 0;
     height: 0;
-    margin-left: 5px;
+    margin-left: 6px;
     vertical-align: middle;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;

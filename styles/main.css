@@ -29,101 +29,58 @@ header img {
 /* Apply creepster font to the first heading in the header */
 header h2 {
            font-family: 'Creepster', cursive;
-           font-size: 2.8rem;
-           letter-spacing: 2px;
+           font-size: 250%;
 }
 
-/* Two-column structural kayout matching the layout style */
-main {
-    display: flex;
-    padding: 20px 0;
-}
-
-#sidebar {
-    width: 220px;
-    flex-shrink: 0;
-    margin-right: 30px;
-}
-
-#content {
-    flex-grow: 1;
-}
-
-/* page heading styled with a larger initial letter */
-h1 {
-    font-size: 2rem;
-    margin-top: 0;
-    margin-bottom: 30px;
-}
+/* Big initial letter style for the h1 page heading */
 .large_letter {
-    font-size: 3rem;
+    font-size: 150%;
 }
 
-/*sidebar gurantee styling */
-.guarantee_box {
-    background-color: #ff9900;
-    border-radius: 10px;
-    padding: 20px;
-}
-.guarantee_box h3 {
-    margin-top: 0;
-    font-size: 1.2rem;
+/* Base item structure configuration inside your catalog list */
+#product_catalog > li {
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
 }
 
-/* individual product row setting */
-.product_item {
-    display: flex;
-   align-items: flex-start;
-   margin-bottom: 40px;
-}
-
-/* image + caption container link */
-.product_item figure {
-    margin: 0 30px 0 0;
+/* Figure laypout floating to the left of the item text description */
+.costume_thumb {
+    float: left;
     width: 140px;
+    margin: 0 25px 0 0;
+    padding: 0;
     text-align: center;
-    flex-shrink: 0;
-}
-.product_item figure a {
-    text-decoration: none;
 }
 
+.costume_thumb a {
+    text-decoration: none;
+    display: block;
+}
 
 /* figcaption text color (pure orange mixed with 10% black) */
-.product_item figcaption {
+.costume_thumb figcaption {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.15em;
     margin-bottom: 8px;
     color: #e65c00;
 }
-.product_item figure img {
+
+.costume_thumb img {
     max-width: 100%;
     height: auto;
 }
 
-/* description and prices area */
-.product_details {
-    padding-top: 25px;
+/* Description and prices container alignment */
+.costume_description {
+    overflow: hidden;
+    padding-top: 5px;
 }
-.product_details p {
-    margin: 0 0 10px 0;
+
+.costume_description p {
+    margin: 10px;
     line-height: 1.4;
 }
-.product_details .price {
-    font-weight: bold;
-} 
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

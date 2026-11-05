@@ -6,18 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>the Halloween Store - Costumes</title>
     <!-- Google font: creepster-->
-        <link rel="preconnect" href="https://googleapis.com">
-        <link rel="preconnect" href="https://gstatic.com" crossorigin>
-        <link href="https://googleapis.com/css2?family=creepster&display=swap" rel="stylesheet">
-    <!-- style sheets --> 
-     <link rel="stylesheet" href="../../styles/main.css">
-     <link rel="stylesheet" href="../../styles/menu.css">
-     <link rel="stylesheet" href="../../styles/pages.css">
-     </head>
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link href="https://googleapis.com/css2?family=creepster&display=swap" rel="stylesheet" />
+    <!-- style sheets -->
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <link rel="stylesheet" href="../../styles/pages.css" />
+  </head>
 
-     <body>
-        <header>
-      <img src="../../images/pumpkin.gif" alt="pumpkin" id="pumpkin">
+  <body>
+    <header>
+      <img src="images/pumpkin.gif" alt="pumpkin" id="pumpkin" />
       <h2>The Halloween Store</h2>
       <h3>For the little Goblin in all of us!</h3>
     </header>
@@ -27,71 +26,70 @@
         <li><a href="../../index.html">Home</a></li>
         <li><a href="index.html" class="current">Products</a></li>
         <li><a href="../../personal.html">Personal</a></li>
-       <li><a href="../../decorating/index.html">Decorating ideas</a></li>
+        <li><a href="../../decorating/index.html">Decorating ideas</a></li>
         <li><a href="../../email.html">join email</a></li>
       </ul>
-   </nav>
+    </nav>
 
     <main>
       <!-- sidebar guarantee box -->
-      <aside id="sidebar">
-        <div class="guarantee_box">
+      <aside>
         <h3>My guarantee</h3>
         <p>If you aren't completely satisfied with everything you buy from my site, you can return it for a full refund. <strong>no questions asked!</strong></p>
-        </div>
       </aside>
 
       <!--main product section -->
-      <section id="content">
+      <section>
         <h1><span class="large_letter">C</span>ostumes</h1>
-      
-       <!-- product 1: Austin Powers -->
-        <div class="product_item">
-            <figure>
+
+        <ul id="product_catalog">
+          <!-- product 1: Austin Powers -->
+          <li>
+            <figure class="costume_thumb">
               <a href="austin.html">
                 <figcaption>Austin Powers</figcaption>
                 <img src="../../images/products/austin.jpg" alt="Austin Powers Costume" />
               </a>
-              </figure>
-              <div class="product_details">
-                <p>Be the most shagadelic guest at this year's party, baby!</p>
-                <p class="price">Price: 79.99</p>
-              </div>
-        </div>
+            </figure>
+            <div class="product_description">
+              <p>Be the most shagadelic guest at this year's party, baby!</p>
+              <p><strong>Price:</strong> 79.99</p>
+            </div>
+          </li>
 
-        <!-- Product 2: Frankenstein -->
-         <div class="product_item">
-          <figure>
-            <a href="frankenstein.html">
-                 <figcaption>Frankenstein</figcaption>
-                 <img src="../../images/products/frankenstein.jpg" alt="Frankenstein Costume">
-                </a>
-          </figure>
-          <div class="product_details">
-            <p> This one is sure to make the townspeople run for their torches.</p>
-             <p class="price">Price: 59.99</p>
-           </div>
-          </div>
+          <!-- Product 2: Frankenstein -->
+          <li>
+            <figure class="costume_thumb">
+              <a href="frankenstein.html">
+                <figcaption>Frankenstein</figcaption>
+                <img src="../../images/products/frankenstein.jpg" alt="Frankenstein Costume" />
+              </a>
+            </figure>
+            <div class="costume_description">
+              <p>This one is sure to make the townspeople run for their torches.</p>
+              <p><strong>Price:</strong> 59.99</p>
+            </div>
+          </li>
 
           <!-- Product 3: Martian-->
-          <div class="product_item">
-              <figure>
-                 <a href="martian.html">
-                     <figcaption>Martian</figcaption>
-                     <img src="../../images/products/martian.jpg" alt="Martian Costume">
-                 </a
-              </figure>
-              <div class="product_details">
-                <p>Now includes a stunning cape that perfectly offsets those Martian bug eyes.</p>
-                <p class="price">Price: 69.99</p>
-              </div>
-          </div>
-          </section>
-          </main>
+          <li>
+            <figure class="costume_thumb">
+              <a href="martian.html">
+                <figcaption>Martian</figcaption>
+                <img src="../../images/products/martian.jpg" alt="Martian Costume" />
+              </a>
+            </figure>
+            <div class="costume_description">
+              <p>Now includes a stunning cape that perfectly offsets those Martian bug eyes.</p>
+              <p><strong>Price:</strong> 69.99</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-       
-          <footer>
-              <p>(c) Ben Murach</p>
+    <footer>
+      <p>(c) Ben Murach</p>
     </footer>
   </body>
 </html>

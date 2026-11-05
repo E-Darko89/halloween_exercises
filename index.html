@@ -4,220 +4,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>the Halloween Store - props</title>
-    <style>
-        html {
-          background-color: white;
-          body {
-            font-family: sans-serif;
-            background-color: white;
-            padding: 0;
-            border: 3px solid black;
-            width: 800px;
-            margin: 0 auto;
-          }
-          h1, h2, h3, p {
-            margin: 0;
-            padding: 0;
-          }
-          /* header styling with linear gradient layout */
-          header {
-            padding: 20px 25px;
-            background-image: linear-gradient(to right, #ffe6cc 0%, #ff9900 65%, #000000 100%);
-            text-align: left;
-            border-bottom: 3px solid black;
-            overflow: hidden;
-          }
-          header img {
-            float: left;
-            height: 75px;
-            padding-right: 20px;
-          }
-          header h2 {
-            font-size: 230%;
-            font-weight: bold;
-            color: #000000;
-            line-height: 1.1;
-            margin-bottom: 2px;
-          }
-          header h3 {
-            font-size: 110%;
-            font-weight: bold;
-            color: #000000;
-            letter-spacing: 0.5px;
-          }
-          /* navigation menu layout */
-          #nav_menu {
-            clear: left;
-            background-color: #000000;
-        }
-          #nav_menu ul {
-          list-style: none;
-          position: relative;
-          margin: 0;
-          padding: 0;
-        }
-        #nav_menu ul li {
-          float: left;
-          position: relative;
-        }
-        #nav_menu ul li a {
-          text-align: center;
-          display: block;
-          width: 155px;
-          padding:  .7em 0;
-          text-decoration: none;
-          background-color: black;
-          color: white;
-          font-weight: bold;
-          box-sizing: border-box;
-        }
-         #nav_menu ul li a.current {
-          color: #ff9900;
-         }
-         #nav_menu ul li a:hover,
-         #nav_menu ul li a:focus {
-          color: #ff9900;
-         }
-         /* dropdwn structural behavior */
-         #nav_menu ul ul {
-          display: none;
-          position: absolute;
-          top: 100%;
-          left: 0;
-          z-index: 99;
-         }
-           #nav_menu ul ul li {
-          float: none;
-         }
-           #nav_menu ul ul li a {
-          background-color: black;
-          text-align: left;
-          padding-left: 15px;
-          width: 145px;
-        }
-        #nav_menu ul li:hover > ul {
-          display: block;
-        }
-        #nav_menu > u::after {
-          content: "";
-          clear: both;
-          display: block;
-        }
+    <title>the Halloween Store - Costumes</title>
+    <!-- Google font: creepster-->
+        <link rel="preconnect" href="https://googleapis.com">
+        <link rel="preconnect" href="https://gstatic.com" crossorigin>
+        <link href="https://googleapis.com/css2?family=creepster&display=swap" rel="stylesheet">
+    <!-- style sheets --> 
+     <link rel="stylesheet" href="../../styles/main.css">
+     <link rel="stylesheet" href="../../styles/menu.css">
+     <link rel="stylesheet" href="../../styles/pages.css">
+     </head>
 
-        #nav_menu ul li:has(ul) > a::after {
-          content: " \25BC";
-          font-size: 0.7em;
-          padding-left: 2px;
-        }
-       /* two-column container structure*/
-       main {
-          display: block;
-          clear: both;
-          padding: 20px 0;
-          overflow: hidden;
-      }
-      /* sidebar guarantee layout */
-      aside {
-        float: left;
-        width: 160px;
-        margin-left: 20px;
-        padding: 15px;
-        background-color: #ff9900;
-        border: 2px solid black;
-        box-sizing: border-box;
-      }
-      aside h3 {
-        font-size: 110%;
-        margin-bottom: .5em;
-        color: black;
-      }
-      aside p {
-        font-size: 85%;
-        line-height: 1.4;
-      }
-       /* catalog item presentation */
-       section {
-        width: 560px;
-        float: right;
-        padding: 0 20px 20px 0;
-        box-sizing: border-box;
-       }
-       section h1 {
-        font-size: 200%;
-        margin-top: 0;
-        margin-bottom:  .5em;
-        text-transform: capitalize;
-       }
-       #product_catalog > li {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-       }
-       #product_catalog > li {
-        margin-bottom: 25px;
-        padding-bottom: 15px;
-        border-bottom: 1px dotted #ccc;
-      }
-      #product_catalog > li:last-child {
-        border-bottom: none;
-      }
-      #product_catalog ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      #product_catalog ul li {
-        margin-bottom: 4px;
-      }
-      #product_catalog ul li a {
-        text-decoration: none;
-        font-size: 1.15em;
-        font-weight: bold;
-        color: #ff9900;
-      }
-      #product_catalog ul li a:hover {
-        text-decoration: underline;
-      }
-      #product_catalog u {
-        text-decoration: underline;
-      }
-      #product_catalog ul li:nth-child(2) {
-        margin: 5px 0;
-        color: #333;
-        font-size: 95%;
-        line-height: 1.3;
-      }
-      product_catalog ul li strong {
-        color: #000;
-      }
-      /* footer styling */
-      footer {
-        clear: both;
-        border-top: 2px solid black;
-        padding: 15px;
-        background-color: white;
-        margin-top: 20px;
-      }
-      footer p {
-        font-size: 90%;
-        text-align: center;
-      }
-
-      /* large screen meedia adjustments */
-      @media  screen and (min-width: 1000px) {
-        body {
-          width: 1000px;
-          box-shadow: 0 9px 18px 9px rgba(0,0,0,0.2);
-      }
-      section {
-        width: 760px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <img src="images/pumpkin.gif" alt="Halloween Store Logo  " />
+     <body>
+        <header>
+      <img src="../../images/pumpkin.gif" alt="pumpkin" id="pumpkin">
       <h2>The Halloween Store</h2>
       <h3>For the little Goblin in all of us!</h3>
     </header>
@@ -225,80 +25,73 @@
     <nav id="nav_menu">
       <ul>
         <li><a href="../../index.html">Home</a></li>
-        <li>
-          <a href="../index.html" class="current">products</a>
-          <ul>
-            <li><a href="index.html">props</a></li>
-            <li><a href="../costumes/index.html">costumes</a></li>
-            <li><a href="../special/index.html">special FX</a></li>
-            <li><a href="../masks/index.html">masks</a></li>
-          </ul>
-        </li>
-        <li><a href="../personal/index.html" class="arrow">Personal</a></li>
-        <li><a href="../../decorations/index.html" class="arrow">Decorating ideas</a></li>
+        <li><a href="index.html" class="current">Products</a></li>
+        <li><a href="../../personal.html">Personal</a></li>
+       <li><a href="../../decorating/index.html">Decorating ideas</a></li>
         <li><a href="../../email.html">join email</a></li>
       </ul>
-    </nav>
+   </nav>
 
     <main>
-      <aside>
+      <!-- sidebar guarantee box -->
+      <aside id="sidebar">
+        <div class="guarantee_box">
         <h3>My guarantee</h3>
         <p>If you aren't completely satisfied with everything you buy from my site, you can return it for a full refund. <strong>no questions asked!</strong></p>
+        </div>
       </aside>
 
-      <section>
-        <h1>props</h1>
+      <!--main product section -->
+      <section id="content">
+        <h1><span class="large_letter">C</span>ostumes</h1>
+      
+       <!-- product 1: Austin Powers -->
+        <div class="product_item">
+            <figure>
+              <a href="austin.html">
+                <figcaption>Austin Powers</figcaption>
+                <img src="../../images/products/austin.jpg" alt="Austin Powers Costume" />
+              </a>
+              </figure>
+              <div class="product_details">
+                <p>Be the most shagadelic guest at this year's party, baby!</p>
+                <p class="price">Price: 79.99</p>
+              </div>
+        </div>
 
-        <ul id="product_catalog">
-          <li>
-            <ul>
-              <li>
-                <a href="flying_bats.html" accesskey="b">flying <u>B</u>ats</a>
-              </li>
-              <li>Bats flying in front of a full moon make for eerie spectacle</li>
-              <li><strong>price:</strong> 69.99</li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li>
-                <a href="deranged_cat.html" accesskey="c">20" Deranged <u>c</u>at</a>
-              </li>
-              <li>This cat provides its own light and is perfect for a backyard haunting</li>
-              <li><strong>price:</strong> 19.99</li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li>
-                <a href="ugly_rat.html" accesskey="r">16" Ugly <u>r</u>at</a>
-              </li>
-              <li>This guy is sure to shorten the stay of any unwanted house guest</li>
-              <li><strong>price:</strong> 14.99</li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li><a href="Uglier_rat.html" accesskey="U">20" U<u>g</u>lier Rat</a></li>
-              <li>Yuck! This one will keep you awake at night.</li>
-              <li><strong>price:</strong> 19.99</li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li>
-                <a href="plastic_skeleton.html" accesskey="s"> Plastic <u>S</u>keleton</a>
-              </li>
-              <li>This life-size plastic skeleton will be the life of the party. Use him as is or dress him up for an even better effect.</li>
-              <li><strong>price:</strong> 14.95</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-    </main>
+        <!-- Product 2: Frankenstein -->
+         <div class="product_item">
+          <figure>
+            <a href="frankenstein.html">
+                 <figcaption>Frankenstein</figcaption>
+                 <img src="../../images/products/frankenstein.jpg" alt="Frankenstein Costume">
+                </a>
+          </figure>
+          <div class="product_details">
+            <p> This one is sure to make the townspeople run for their torches.</p>
+             <p class="price">Price: 59.99</p>
+           </div>
+          </div>
 
-    <footer>
-      <p>(c) Ben Murach</p>
+          <!-- Product 3: Martian-->
+          <div class="product_item">
+              <figure>
+                 <a href="martian.html">
+                     <figcaption>Martian</figcaption>
+                     <img src="../../images/products/martian.jpg" alt="Martian Costume">
+                 </a
+              </figure>
+              <div class="product_details">
+                <p>Now includes a stunning cape that perfectly offsets those Martian bug eyes.</p>
+                <p class="price">Price: 69.99</p>
+              </div>
+          </div>
+          </section>
+          </main>
+
+       
+          <footer>
+              <p>(c) Ben Murach</p>
     </footer>
   </body>
 </html>

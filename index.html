@@ -11,35 +11,44 @@
     <link href="https://googleapis.com/css2?family=creepster&display=swap" rel="stylesheet" />
     <!-- style sheets -->
     <link rel="stylesheet" href="../../styles/main.css" />
+    <link rel="stylesheet" href="../../styles/menu.css" /> 
     <link rel="stylesheet" href="../../styles/pages.css" />
   </head>
 
   <body>
     <header>
-      <img src="images/pumpkin.gif" alt="pumpkin" id="pumpkin" />
-      <h2>The Halloween Store</h2>
-      <h3>For the little Goblin in all of us!</h3>
+      <img src="images/pumpkin.gif" alt="pumpkin logo" id="logo" />
+      <h1>The Halloween Store</h1>
+      <h2>For the little Goblin in all of us!</h2>
     </header>
 
     <nav id="nav_menu">
       <ul>
         <li><a href="../../index.html">Home</a></li>
         <li><a href="index.html" class="current">Products</a></li>
-        <li><a href="../../personal.html">Personal</a></li>
+        <ul>
+          <li><a href="index.html" class="current">costumes</a></li>
+          <li><a href="../props/index.html">props</a></li>
+        </ul>
+      </li>
+        <li><a href="../../personal/index.html">Personal</a></li>
         <li><a href="../../decorating/index.html">Decorating ideas</a></li>
         <li><a href="../../email.html">join email</a></li>
-      </ul>
+     </ul>
     </nav>
 
     <main>
       <!-- sidebar guarantee box -->
-      <aside>
-        <h3>My guarantee</h3>
+       <aside>
+        <div class="guarantee">
+           <h3>My guarantee</h3>
         <p>If you aren't completely satisfied with everything you buy from my site, you can return it for a full refund. <strong>no questions asked!</strong></p>
+       </div>
       </aside>
 
       <!--main product section -->
       <section>
+        <h1>costumes</h1>
         <h1><span class="large_letter">C</span>ostumes</h1>
 
         <ul id="product_catalog">

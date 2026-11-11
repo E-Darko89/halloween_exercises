@@ -29,9 +29,16 @@ header img {
     padding-right: 20px;
 }
 /* Apply creepster font to the first heading in the header */
-header h2 {
+header h1 {
            font-family: 'Creepster', cursive;
            font-size: 250%;
+           margin-bottom: 5px;
+}
+
+header h2 {
+           font-family: sans-serif;
+           font-size: 115%;
+           font-weight: bold;
 }
 
 /* main content headings */

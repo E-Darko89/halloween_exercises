@@ -133,10 +133,10 @@ section h1 {
 /* Figure laypout floating to the left of the item text description */
 .costume_thumb {
     float: left;
-    width: 140px;
-    margin: 0 25px 0 0;
+    width: 155px;
+    margin: 0 20px 0 0;
     padding: 0;
-    text-align: center;
+    text-align: left;
 }
 
 .costume_thumb a {

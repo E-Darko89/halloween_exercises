@@ -2,9 +2,8 @@ html {
     background-color: white;
 }
 body {
-     font-family: sans-serif;
-     background-color: white;
-     padding: 0;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     box-shadow: 0 9px 18px 9px;
      border: 3px solid black;
      width: 800px;
      margin: 0 auto;
@@ -21,47 +20,48 @@ header {
    padding: 15px;
    background-image: linear-gradient(45deg, white 0%, #ff9900 75%, black 100%);
    border-bottom: 2px solid black;
+   overflow: auto;
 }
+
 header img {
     float: left;
    margin-right: 15px;
 }
+
 /* Apply creepster font to the first heading in the header */
-header h1 {
+header h1, header h2 {
            font-family: 'Creepster', cursive, sans-serif;
            font-size: 230%;
            letter-spacing: 2px;
           margin: 0;
 }
 
-header h2 {
+header h3 {
            font-size: 125%;
            margin: 0;
 }
 
-/* Horizontal navigation Bar */
+/* Horizontal navigation bar */
+nav {
+    background-color: black;
+}
+
 #nav_menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position: relative;
+   display: flex;
+   justify-content: space-around;
 }
 
-#nav_menu > ul {
-    display: flex;
-    justify-content: space-around;
-    background-color: #000000;
-}
-
-#nav_menu ul li {
+#nav > ul > li {
     position: relative;
 }
 
 #nav_menu ul li a {
     display: block;
     color: white;
-    text-align: center;
-    padding: 10px 15px;
+    padding: 12px 20px;
     text-decoration: none;
     font-weight: bold;
 }

@@ -91,7 +91,7 @@ nav ul li:hover > ul, .navbar ul li:hover > ul {
     display: block;
 }
 
-#nav ul ul li, .navbar ul ul li {
+nav ul ul li, .navbar ul ul li {
     width: 100%;
 }
 

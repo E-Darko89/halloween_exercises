@@ -42,11 +42,11 @@ header h3 {
 }
 
 /* Horizontal navigation bar */
-nav {
+nav, .navbar {
     background-color: black;
 }
 
-#nav_menu ul {
+nav > ul, .navbar > ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -54,11 +54,11 @@ nav {
    justify-content: space-around;
 }
 
-#nav > ul > li {
+nav > ul > li, .navbar > ul > li {
     position: relative;
 }
 
-#nav_menu ul li a {
+nav ul li a, .navbar ul li a {
     display: block;
     color: white;
     padding: 12px 20px;
@@ -66,36 +66,43 @@ nav {
     font-weight: bold;
 }
 
-#nav_menu a.current {
+nav a.current,
+nav ul li a:hover,
+.navbar a.current,
+.navbar ul li a:hover {
     color: #ff9900;
 }
 
 /* dropdown sub-menu style */
-#nav_menu ul ul {
+nav ul ul, .navbar ul ul {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #000000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     min-width: 160px;
     z-index: 100;
 }
 
-#nav_menu ul li:hover > ul {
+nav ul li:hover > ul, .navbar ul li:hover > ul {
     display: block;
 }
 
-#nav_menu ul ul li {
+#nav ul ul li, .navbar ul ul li {
     width: 100%;
 }
 
-#nav_menu ul ul li a {
+nav ul ul li a, .navbar ul ul li a {
     padding: 10px 15px;
     text-align: left;
 }
 
-#nav_menu ul ul li a:hover {
+nav ul ul li a:hover, .navbar ul ul li a:hover {
     background-color: #333333;
+    color: white;
 }
     
 /* main content headings */
@@ -216,9 +223,6 @@ footer {
     font-size: 90%;
 }
 
-.navbar {
-    background-color: black;
-}
 
 
 

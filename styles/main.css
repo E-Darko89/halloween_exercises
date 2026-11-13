@@ -161,11 +161,11 @@ section h1 {
 /* Description and prices container alignment */
 .costume_description {
     overflow: hidden;
-    padding-top: 5px;
+    padding-top: 28px;
 }
 
 .costume_description p {
-    margin: 0 0 10px 10px;
+    margin: 0 0 12px 0px;
     line-height: 1.4;
 }
 

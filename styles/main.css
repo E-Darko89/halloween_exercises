@@ -177,28 +177,23 @@ aside {
 }
 
 .guarantee {
-    background-color: #ffe6cc;
-    border: 2px solid #ff9900;
-    border-radius: 8px;
+    background-color: #ffa500;
+    border-radius: 6px;
     padding: 15px;
     margin-bottom: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 .guarantee h3 {
-    color: #e65c00;
+    color: black;
     font-size: 1.15em;
     font-weight: bold;
-    text-transform: uppercase;
     margin-bottom: 10px;
-    border-bottom: 1px solid #ff9900;
-    padding-bottom: 5px;
 }
 
 .guarantee p {
     font-size: 0.9em;
     line-height: 1.4;
-    color: #333333;
+    color: black;
 }
 
 /* float correction layout properties for parent containers elements */

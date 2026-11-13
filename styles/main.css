@@ -144,12 +144,12 @@ section h1 {
     display: block;
 }
 
-/* figcaption text color (pure orange mixed with 10% black) */
+/* figcaption text color */
 .costume_thumb figcaption {
     font-weight: bold;
     font-size: 1.15em;
     margin-bottom: 8px;
-    color: #e65c00;
+    color: #ffa500;
 }
 
 .costume_thumb img {
